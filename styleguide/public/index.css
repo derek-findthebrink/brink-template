@@ -156,6 +156,29 @@ form.two-column {
   height: 10em;
   margin: 1em; }
 
+main {
+  overflow: visible; }
+  main section, main .section {
+    margin-bottom: 3em; }
+  main section:last-child, main .section:last-child {
+    margin-bottom: 0; }
+
+.top-background-image {
+  height: 80%;
+  width: 100%;
+  background-size: 100%;
+  text-align: center; }
+  .top-background-image .top-background-image-centered {
+    display: inline-block;
+    vertical-align: middle; }
+
+.top-background-image:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -0.25em; }
+
 footer.fixed, .footer.fixed {
   position: absolute;
   bottom: 0; }
@@ -183,18 +206,12 @@ h1, h2, h3, h4, h5, h6 {
 html {
   background: url("./backgrounds/subtle_white_feathers.png"); }
 
-.jumbotron {
-  background-image: url("http://www.amusingtruth.com/wp-content/uploads/2014/01/inspirational-desktop-wallpapers-34.jpg");
-  background-size: 100% auto; }
-  .jumbotron .message {
-    padding-left: 25%;
-    text-shadow: 2px 2px white; }
-    .jumbotron .message h1 {
-      padding-bottom: 0.5em; }
-    .jumbotron .message a {
-      text-shadow: none; }
-    .jumbotron .message p {
-      font-weight: bold; }
+.top-background-image {
+  background-image: url("../assets/cool-background-random-17506457-2299-1437.jpg");
+  background-repeat: no-repeat; }
+  .top-background-image .top-background-image-centered {
+    font-size: 3em; }
 
-main {
-  margin-top: 70px; }
+main section, main .section {
+  padding: 1em;
+  background-color: rgba(255, 255, 255, 0.8); }

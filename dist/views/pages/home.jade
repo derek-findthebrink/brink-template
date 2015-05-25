@@ -1,10 +1,18 @@
 extends ../layout
 
 block content
-	div.jumbotron
-		div.message
-			h1 this is what I do best
-			// ISSUE
-			// box-shadow does not improve visibility: change text font?
-			// p see what the future of construction has in store
-			a.btn.btn-primary.btn-lrg(href="/technology" role='button') learn more
+	section#advantage.drop-shadow
+		h2 skills
+		include ../placeholders/lorem
+		include ../placeholders/lorem
+	section#clients.drop-shadow
+		h2 clients
+		include ../placeholders/lorem
+	section#services.drop-shadow
+		h2 expertise
+		include ../placeholders/lorem
+		include ../placeholders/lorem
+		include ../placeholders/lorem
+	section#contact.drop-shadow
+		h2 contact
+		include ../placeholders/lorem

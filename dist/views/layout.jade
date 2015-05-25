@@ -3,7 +3,9 @@ html
 	head
 		include ./includes/head.jade
 	body
-		nav.navbar.navbar-fixed-top.trans-green
+		.top-background-image
+			include ./includes/brand
+		nav.navbar.trans-green
 			include ./includes/nav.jade
 		main
 			block content

@@ -19,7 +19,7 @@ module.exports = (grunt)->
 				src: '**'
 				dest: './dist/public/assets'
 				expand: true
-				cwd: './dev/public/'
+				cwd: './dev/assets/'
 			styleguide:
 				src: '**'
 				dest: './dev/sass/kss/styleguide-template/public/'
