@@ -87,8 +87,10 @@ footer, .footer {
   overflow: auto; }
   footer p, .footer p {
     margin: 0; }
-  footer ul li, .footer ul li {
-    list-style-type: none; }
+  footer ul, .footer ul {
+    padding: 0; }
+    footer ul li, .footer ul li {
+      list-style-type: none; }
 
 header, .header {
   width: 100%;
@@ -206,6 +208,9 @@ h1, h2, h3, h4, h5, h6 {
 html {
   background: url("./backgrounds/subtle_white_feathers.png"); }
 
+nav.navbar .container-fluid {
+  text-align: center; }
+
 .top-background-image {
   background-image: url("../assets/cool-background-random-17506457-2299-1437.jpg");
   background-repeat: no-repeat; }
@@ -215,3 +220,8 @@ html {
 main section, main .section {
   padding: 1em;
   background-color: rgba(255, 255, 255, 0.8); }
+  main section h2, main .section h2 {
+    margin-bottom: 0.5em;
+    text-align: center; }
+  main section p, main .section p {
+    text-align: justify; }
