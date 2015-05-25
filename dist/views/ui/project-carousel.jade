@@ -1,0 +1,25 @@
+div#projectCarousel.carousel.slide(data-ride='carousel')
+	ol.carousel-indicators
+		li.active(data-target='#projectCarousel' data-slide-to='0')
+		li(data-target='#projectCarousel' data-slide-to='1')
+		li(data-target='#projectCarousel' data-slide-to='2')
+	div.carousel-inner(role='listbox')
+		div.item.active
+			img(src='http://www.bimhow.com/wp-content/uploads/2013/05/bg-home-construction.jpg' alt='')
+			div.carousel-caption
+				h1 placeholder
+		div.item
+			img(src='http://www.lifeofanarchitect.com/wp-content/uploads/2014/03/CHouse-Modern-SIP-panel-3D-shop-drawing.jpg' alt='')
+			div.carousel-caption
+				h1 let's get your content in here
+		div.item
+			img(src='http://www.sugarbeecrafts.com/wp-content/uploads/2015/03/sip-panel.jpg' alt='')
+			div.carousel-caption
+				h1 let's talk about images/content that would be suitable here
+
+		a.left.carousel-control(href='#projectCarousel' role='button' data-slide='prev')
+			span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+			span.sr-only Previous
+		a.right.carousel-control(href='#projectCarousel' role='button' data-slide='next')
+			span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+			span.sr-only Next

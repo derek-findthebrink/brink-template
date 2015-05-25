@@ -1,0 +1,89 @@
+// Colors
+//
+// defines all colors to be used in the document
+//
+// Styleguide Colors
+
+
+$green-1: $rgba-primary-0
+$green-2: $rgba-primary-1
+$yellow-1: $rgba-primary-2
+$blue-1: $rgba-primary-3
+$blue-2: $rgba-primary-4
+$trans-green-1: rgba($green-1, 0.7)
+$trans-blue-1: rgba($blue-1, 0.5)
+$trans-yellow-1: rgba($yellow-1, 0.5)
+$transparent-white: rgba(0,0,0,0.5)
+
+// theme
+// 
+// color theme
+//
+// .green-1			- primary green
+// .green-2			- accent green
+// .yellow-1		- primary yellow
+// .blue-1			- primary blue
+// .blue-2			- accent blue
+// .trans-green		- transparent primary green
+// .trans-blue		- transparent primary blue
+// .trans-yellow	- transparent primary yellow
+//
+// Markup:
+// ./kss/markup/colors.html
+//
+// Styleguide Colors.theme
+
+.green-1
+	background-color: $green-1
+
+.green-2
+	background-color: $green-2
+	h1, a h1, a
+		color: $yellow-1
+
+.yellow-1
+	background-color: $yellow-1
+	h1
+		color: $green-2
+
+.blue-1
+	background-color: $blue-1
+	color: mix($blue-1, white, 10%)
+
+.blue-2
+	background-color: $blue-2
+	color: mix($blue-2, white, 10%)
+
+.trans-green
+	background-color: $trans-green-1
+	color: black
+	h1, a, a h1
+		color: mix($green-1, black, 50%)
+	a
+		font-family: 'Raleway', sans-serif
+	span
+		color: mix($yellow-1, gray, 5%)
+	.nav>li>a:hover 
+		background-color: $trans-green-1
+
+
+.trans-blue
+	background-color: $trans-blue-1
+	color: black
+
+.trans-yellow
+	background-color: $trans-yellow-1
+	color: black
+
+// DOM ------------------------------------------------------------------
+// links
+//$link-color: $textColor-3
+//link-colorHover: $accent-1
+
+// footer
+//$footer-background: $primary-1
+//$footer-text: $accent-1
+
+// module colors
+// drop shadow
+$drop-shadow: $green-1 
