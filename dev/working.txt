@@ -1,0 +1,27 @@
+to do
+
+	Style
+		.button styling
+		color re-factor
+			- refactor to generic names
+			- to allow for rapid + semantic color shifts
+		change background to something more professional
+		client section
+		.headline styling
+
+	Animations
+		hover effect on nav
+		hidden sections until display
+
+	SEO
+
+
+	Layout
+		move contact into footer
+		remove unneeded links
+
+	Design
+		create top image design for systemt
+
+	Research
+		SEO - find out if css: display: hidden affects 
