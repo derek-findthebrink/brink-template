@@ -2,9 +2,6 @@ to do
 
 	Style
 		.button styling
-		color re-factor
-			- refactor to generic names
-			- to allow for rapid + semantic color shifts
 		client section
 
 	Animations

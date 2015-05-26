@@ -245,7 +245,8 @@ ul.list {
   font-size: 125%;
   color: gray;
   opacity: 0.9;
-  text-align: center; }
+  text-align: center;
+  line-height: 0.7; }
 
 .headline:before {
   content: '"';
@@ -260,6 +261,12 @@ ul.list {
   top: 15px;
   left: 10px;
   font-size: 300%; }
+
+ul.pinboard li {
+  list-style-type: none;
+  text-align: center;
+  height: 3em;
+  vertical-align: center; }
 
 .selectable:hover {
   cursor: pointer; }
@@ -305,6 +312,8 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
 .title {
+  font-weight: bold;
+  font-family: "Raleway", sans-serif;
   font-weight: bold; }
 
 .summary {
