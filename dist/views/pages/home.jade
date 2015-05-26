@@ -1,14 +1,17 @@
 extends ../layout
 
 block content
-	section#advantage.drop-shadow
-		h2 the systemT advantage
-		include ./content/skills
-	section#clients.drop-shadow
-		h2 clients
-		include ./content/clients
-	section#services.drop-shadow
-		h2 expertise
-		include ./content/expertise
-	section#contact.drop-shadow
+	section#advantage
+		.content-inset
+			h2 the systemT advantage
+			include ./content/skills
+	section#clients
+		.content-inset
+			h2 clients
+			include ./content/clients
+	section#services
+		.content-inset
+			h2 expertise
+			include ./content/expertise
+	section#contact
 		p.headline I'm good at what I do, let me help you out on your next project.
