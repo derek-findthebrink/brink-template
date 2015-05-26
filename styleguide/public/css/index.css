@@ -69,15 +69,6 @@ body {
   width: 99.9%;
   height: 99%; }
 
-.hidden {
-  display: none; }
-
-.float-R {
-  float: right; }
-
-.float-L {
-  float: left; }
-
 footer, .footer {
   text-align: center;
   width: 100%;
@@ -100,9 +91,9 @@ header, .header {
   overflow: auto; }
 
 main, .main {
-  width: 95%;
-  margin: 0.5em auto 0.5em auto;
-  padding: 0.5em;
+  width: 100%;
+  margin: 0.5em 0 0.5em 0;
+  padding: 0;
   clear: both; }
 
 nav li, .nav li {
@@ -176,9 +167,9 @@ form.two-column {
 
 main {
   overflow: visible; }
-  main section, main .section {
+  main section.independent, main .section.independent {
     margin-bottom: 3em; }
-  main section:last-child, main .section:last-child {
+  main section.independent:last-child, main .section.independent:last-child {
     margin-bottom: 0; }
 
 .top-background-image {
@@ -203,14 +194,11 @@ main {
   .list-hover-show li p.title {
     text-align: center; }
   .list-hover-show li p.description {
-    text-align: left; }
+    text-align: justify; }
 .list-hover-show li:hover {
   cursor: pointer; }
 .list-hover-show li:hover > p.description {
   display: inline-block; }
-
-.button {
-  border: 1px solid black; }
 
 .headline {
   margin: 1.5em 0 1.5em 0;
@@ -252,6 +240,19 @@ footer.fixed, .footer.fixed {
 
 .display-inline {
   display: inline; }
+
+.hidden {
+  display: none; }
+
+.float-R {
+  float: right; }
+
+.float-L {
+  float: left; }
+
+div.content-inset {
+  width: 80%;
+  margin: 0 auto; }
 
 body {
   font-family: "Droid Serif", serif; }
