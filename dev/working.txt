@@ -5,9 +5,7 @@ to do
 		color re-factor
 			- refactor to generic names
 			- to allow for rapid + semantic color shifts
-		change background to something more professional
 		client section
-		.headline styling
 
 	Animations
 		hover effect on nav
@@ -17,8 +15,7 @@ to do
 
 
 	Layout
-		move contact into footer
-		remove unneeded links
+
 
 	Design
 		create top image design for systemt

@@ -213,10 +213,25 @@ main {
   border: 1px solid black; }
 
 .headline {
+  margin: 1.5em 0 1.5em 0;
   font-size: 125%;
   color: gray;
   opacity: 0.9;
   text-align: center; }
+
+.headline:before {
+  content: '"';
+  position: relative;
+  top: 15px;
+  right: 10px;
+  font-size: 300%; }
+
+.headline:after {
+  content: '"';
+  position: relative;
+  top: 15px;
+  left: 10px;
+  font-size: 300%; }
 
 footer.fixed, .footer.fixed {
   position: absolute;
@@ -255,7 +270,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
 html {
-  background: url("./backgrounds/subtle_white_feathers.png"); }
+  background: url("./backgrounds/grey.png"); }
 
 nav a, .nav a {
   text-decoration: none; }
