@@ -5,7 +5,7 @@
 
   router = express.Router();
 
-  siteTitle = 'Brink | Template';
+  siteTitle = 'systemT | template';
 
   siteUrl = 'localhost:3000';
 
