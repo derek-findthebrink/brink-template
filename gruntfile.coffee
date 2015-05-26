@@ -36,7 +36,7 @@ module.exports = (grunt)->
 					'./dist/public/css/index.css': './dev/sass/index.sass'
 					'./dev/sass/kss/styleguide-template/public/index.css': './dev/sass/index.sass'
 		watch:
-			files: ['./dev/coffee/**', './dev/sass/**', './dev/jade/**', './dev/public/**', './dev/assets/**', './dev/kss/**', './gruntfile.coffee']
+			files: ['./dev/coffee/**','./dev/sass/**','./dev/jade/**','./dev/public/**','./dev/assets/**','./dev/kss/**','./gruntfile.coffee','!./dev/sass/kss/styleguide-template/public/**']
 			tasks: ['coffee:compile', 'sass:dist', 'copy', 'kss']
 		
 		jshint:
