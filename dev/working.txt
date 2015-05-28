@@ -1,15 +1,22 @@
 to do - SystemT
 	Structure
+		- fix headline when going to smaller size screen
+		- begin working on media queries
 
 	Style
 		- change fonts
+		- change header colors
+		- create buttons for nav
+		- modify colors to match branding
 
 	Animations
+		- complete hover-show
 
 	SEO
 
 
 	Layout
+		- top-image at smaller screen sizes
 
 
 	Design
@@ -20,10 +27,12 @@ to do - SystemT
 			- money
 			- quotes symbol
 			- linkedin
+		design client section
 
 	Research
 		SEO - find out if css: display: hidden affects
 		CSS - properties that require vendor-prefixes
+		Autoprefixer
 
 to do - Brink SMACSS
 	Modules:
