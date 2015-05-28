@@ -1,8 +1,10 @@
 nav, .nav
+	@include styles-header
 	a
 		text-decoration: none
 	a:hover
 		text-decoration: none
+	li 
+		-webkit-transition: background-color 0.5s
 	li:hover
-		background-color: mix($color-primary, black, 80%)
-		color: mix($color-primary, white, 30%)
+		background-color: $color-primary

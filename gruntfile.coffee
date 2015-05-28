@@ -9,6 +9,7 @@ module.exports = (grunt)->
 					'./dist/lib/www.js': './dev/coffee/bin/www.coffee'
 					'./dist/webApp.js':'./dev/coffee/bin/webApp.coffee'
 					'./dist/routes.js': './dev/coffee/bin/routes.coffee'
+					'./dist/public/js/scripts.js': './dev/coffee/lib/ui.coffee'
 		copy:
 			views:
 				src: '**'
