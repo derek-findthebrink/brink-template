@@ -1,2 +1,23 @@
-script(src='/assets/jquery.sticky.js')
+//- script(src='/assets/jquery.sticky.js')
+
+// bower:js
+script(src='/lib/jquery/dist/jquery.js')
+script(src='/lib/bootstrap/dist/js/bootstrap.js')
+script(src='/lib/wow.js/dist/wow.js')
+script(src='/lib/sticky/jquery.sticky.js')
+script(src='/lib/jquery.smooth-scroll/jquery.smooth-scroll.js')
+// endbower
+
 script(src='/js/scripts.js')
+
+// activate wowjs
+script.
+	new WOW({
+		offset: 30
+		}).init()
+	console.log('wow init')
+
+	$('a').smoothScroll({
+		offset: -35,
+		easing: 'swing'
+		})

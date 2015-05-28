@@ -1,8 +1,8 @@
 to do - SystemT
 	Structure
-		add bower to workflow
 
 	Style
+		- change fonts
 
 	Animations
 
@@ -32,12 +32,6 @@ to do - Brink SMACSS
 		- namespace all
 	create version 0.0.2
 
-to do - learn Bower, Gulp, Browserify
-	Bower
-		- learn how to concatenate all css into one file
-			includes: style.css, animate.css, bootstrap.css
-	Browserify
-		- learn how to manage dependencies for
-			jquery, scripts.js, bootstrap, wow
+to do - npm
 	npm
 		- learn how to publish versions of brink-smacss to manage version changes

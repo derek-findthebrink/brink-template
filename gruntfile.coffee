@@ -38,8 +38,7 @@ module.exports = (grunt)->
 					'./dev/sass/kss/styleguide-template/public/index.css': './dev/sass/index.sass'
 		watch:
 			files: ['./dev/coffee/**','./dev/sass/**','./dev/jade/**','./dev/public/**','./dev/assets/**','./dev/kss/**','./gruntfile.coffee','!./dev/sass/kss/styleguide-template/public/**']
-			tasks: ['coffee:compile', 'sass:dist', 'copy', 'kss']
-		
+			tasks: ['coffee:compile', 'sass:dist', 'copy', 'wiredep']
 		jshint:
 			all: ['./public/js/*.js']
 		kss:
@@ -47,6 +46,10 @@ module.exports = (grunt)->
 				template: './dev/sass/kss/styleguide-template'
 			dist:
 				files: './styleguide/': './dev/sass/'
+		wiredep:
+			task:
+				src: ['dist/views/includes/head.jade', 'dist/views/includes/scripts.jade']
+				ignorePath: '../../public'
 		})
 	
 	grunt.loadNpmTasks('grunt-contrib-jshint')
@@ -55,5 +58,6 @@ module.exports = (grunt)->
 	grunt.loadNpmTasks('grunt-contrib-coffee')
 	grunt.loadNpmTasks('grunt-contrib-watch')
 	grunt.loadNpmTasks('grunt-kss')
+	grunt.loadNpmTasks('grunt-wiredep')
 
-	grunt.registerTask('default', ['coffee', 'sass:dist', 'copy', 'kss'])
+	grunt.registerTask('default', ['coffee', 'sass:dist', 'copy', 'kss', 'wiredep'])
