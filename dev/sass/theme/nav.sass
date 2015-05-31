@@ -1,15 +1,11 @@
 nav, .nav
 	width: 100%
 	@include styles-header
-	box-shadow: 0 5px 10px mix($color-secondary, black, 80%)
-	a
-		text-decoration: none
-	a:hover
-		text-decoration: none
+	background-color: $theme-nav-backgroundColor
+	box-shadow: $theme-nav-boxShadow
 	li 
-		//border: 2px solid mix($color-secondary, black, 80%)
-		cursor: pointer
 		text-transform: uppercase
 		-webkit-transition: background-color 0.5s
+		cursor: pointer
 	li:hover
-		background-color: $color-primary
+		background-color: $theme-nav-li-colorHover

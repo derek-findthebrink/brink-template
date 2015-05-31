@@ -16,15 +16,21 @@ $blue-5: $rgba-primary-4
 $transparent-white: rgba(white, $transparent-ratio)
 
 // MAKE MODIFICATIONS HERE
-$color-primary: $c2
-
+$color-primary: $c2 // lightest blue
 $color-primary-text: mix($color-primary, black, 30%)
 $color-primary-trans: rgba($color-primary, $transparent-ratio)
 
-$color-secondary: $c1
-
+$color-secondary: $c1 // dark blue
 $color-secondary-text: mix($color-secondary, black, 30%)
 $color-secondary-trans: rgba($color-secondary, $transparent-ratio)
+
+$color-tertiary: $c4 // darker grey-blue
+$color-tertiary-text: mix($color-tertiary, black, 30%)
+$color-tertiary-trans: rgba($color-tertiary, $transparent-ratio)
+
+$color-quaternary: $c3 // darker grey-blue
+$color-quaternary-text: mix($color-tertiary, black, 30%)
+$color-quaternary-trans: rgba($color-tertiary, $transparent-ratio)
 
 
 // theme
@@ -37,15 +43,3 @@ $color-secondary-trans: rgba($color-secondary, $transparent-ratio)
 // ./kss/markup/colors.html
 //
 // Styleguide Colors.theme
-
-
-.theme-main
-	background-color: $color-secondary
-	color: $color-primary-text
-	h1, a, a h1
-		color: $color-primary-text
-
-
-// 	module colors
-//		drop shadow
-$drop-shadow: $color-primary
