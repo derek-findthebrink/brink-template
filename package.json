@@ -1,7 +1,7 @@
 {
-  "name": "alta-ps_website",
+  "name": "brink-template",
   "version": "0.0.0",
-  "description": "website to promote alberta high-tech building company",
+  "description": "brink template website",
   "main": "./dist/webApp.js",
   "author": "Brink Technology Co.",
   "scripts": {
