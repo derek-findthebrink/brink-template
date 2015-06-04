@@ -377,8 +377,8 @@ main section:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.7); }
 
 .top-background-image {
-  background-color: white;
-  background-image: url("../assets/back-image.gif");
+  background-color: #d1ebff;
+  background-image: url("../assets/brink_logo-1.png");
   background-repeat: no-repeat; }
   .top-background-image .top-background-image-centered {
     font-size: 3em; }

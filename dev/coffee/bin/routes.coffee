@@ -1,7 +1,7 @@
 express = require('express')
 router = express.Router()
 
-siteTitle = 'systemT | template'
+siteTitle = 'brink | template'
 siteUrl = 'localhost:3000'
 
 router.get('/', (req,res,next)->

@@ -253,10 +253,13 @@ ul.pinboard li {
   height: 3em;
   vertical-align: center; }
 
-.glyph-email:before {
-  background: url("../../assets/systemt-iconography_08.gif");
-  width: 1em;
-  height: 1em; }
+.glyph-email::before {
+  width: 30%;
+  background-image: url("../../assets/systemt-iconography_08.gif");
+  background-repeat: none;
+  background-position: left center;
+  transform: scale(0.3);
+  padding-left: 1em; }
 
 .selectable:hover {
   cursor: pointer; }
@@ -350,7 +353,7 @@ nav, .nav {
   width: 100%;
   font-family: "Raleway", sans-serif;
   font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 0.9);
   box-shadow: 0 5px 15px #42657f; }
   nav li, .nav li {
     text-transform: uppercase;
@@ -374,8 +377,8 @@ main section:nth-child(even) {
   background-color: rgba(255, 255, 255, 0.7); }
 
 .top-background-image {
-  background-color: white;
-  background-image: url("../assets/back-image.gif");
+  background-color: #d1ebff;
+  background-image: url("../assets/brink_logo-1.png");
   background-repeat: no-repeat; }
   .top-background-image .top-background-image-centered {
     font-size: 3em; }
