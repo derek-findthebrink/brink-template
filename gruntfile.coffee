@@ -9,6 +9,7 @@ module.exports = (grunt)->
 					'./dist/lib/www.js': './dev/coffee/bin/www.coffee'
 					'./dist/webApp.js':'./dev/coffee/bin/webApp.coffee'
 					'./dist/routes.js': './dev/coffee/bin/routes.coffee'
+					'./dist/public/js/scripts.js': './dev/coffee/lib/ui.coffee'
 		copy:
 			views:
 				src: '**'
@@ -19,7 +20,12 @@ module.exports = (grunt)->
 				src: '**'
 				dest: './dist/public/assets'
 				expand: true
-				cwd: './dev/public/'
+				cwd: './dev/assets/'
+			backgrounds:
+				src: '**'
+				dest: './dist/public/css/backgrounds/'
+				expand: true
+				cwd: './dev/sass/theme/backgrounds/'
 			styleguide:
 				src: '**'
 				dest: './dev/sass/kss/styleguide-template/public/'
@@ -31,9 +37,8 @@ module.exports = (grunt)->
 					'./dist/public/css/index.css': './dev/sass/index.sass'
 					'./dev/sass/kss/styleguide-template/public/index.css': './dev/sass/index.sass'
 		watch:
-			files: ['./dev/coffee/**', './dev/sass/**', './dev/jade/**', './dev/public/**', './dev/assets/**', './dev/kss/**', './gruntfile.coffee']
-			tasks: ['coffee:compile', 'sass:dist', 'copy', 'kss']
-		
+			files: ['./dev/coffee/**','./dev/sass/**','./dev/jade/**','./dev/public/**','./dev/assets/**','./dev/kss/**','./gruntfile.coffee','!./dev/sass/kss/styleguide-template/public/**']
+			tasks: ['coffee:compile', 'sass:dist', 'copy', 'wiredep']
 		jshint:
 			all: ['./public/js/*.js']
 		kss:
@@ -41,6 +46,10 @@ module.exports = (grunt)->
 				template: './dev/sass/kss/styleguide-template'
 			dist:
 				files: './styleguide/': './dev/sass/'
+		wiredep:
+			task:
+				src: ['dist/views/includes/head.jade', 'dist/views/includes/scripts.jade']
+				ignorePath: '../../public'
 		})
 	
 	grunt.loadNpmTasks('grunt-contrib-jshint')
@@ -49,5 +58,6 @@ module.exports = (grunt)->
 	grunt.loadNpmTasks('grunt-contrib-coffee')
 	grunt.loadNpmTasks('grunt-contrib-watch')
 	grunt.loadNpmTasks('grunt-kss')
+	grunt.loadNpmTasks('grunt-wiredep')
 
-	grunt.registerTask('default', ['coffee', 'sass:dist', 'copy', 'kss'])
+	grunt.registerTask('default', ['coffee', 'sass:dist', 'copy', 'kss', 'wiredep'])

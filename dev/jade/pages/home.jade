@@ -1,10 +1,24 @@
 extends ../layout
 
 block content
-	div.jumbotron
-		div.message
-			h1 this is what I do best
-			// ISSUE
-			// box-shadow does not improve visibility: change text font?
-			// p see what the future of construction has in store
-			a.btn.btn-primary.btn-lrg(href="/technology" role='button') learn more
+	section#advantage.wow.fadeIn
+		.content-inset
+			h2 Brink Template
+			include ./content/advantage
+	section.wow.fadeIn
+		.content-inset
+			include ./content/summary
+	section#clients.wow.flipInX
+		.content-inset
+			h2 Clients
+			include ./content/clients
+	section#services.wow.slideInLeft
+		.content-inset
+			h2 Expertise
+			include ./content/expertise
+	section#functional-areas.wow.slideInRight
+		.content-inset
+			h2 Functional Areas
+			include ./content/functional-areas
+	section#contact.wow.slideInLeft
+		p.headline I'm good at what I do, let me help you out on your next project.

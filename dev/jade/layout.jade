@@ -3,11 +3,13 @@ html
 	head
 		include ./includes/head.jade
 	body
-		nav.navbar.navbar-fixed-top.trans-green
+		.top-background-image
+			include ./includes/brand
+		nav.nav-horizontal#nav-main
 			include ./includes/nav.jade
 		main
 			block content
-		footer.trans-green
+		footer
 			include ./includes/footer.jade
 		
 		include ./includes/templates.jade

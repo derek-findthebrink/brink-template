@@ -1,0 +1,52 @@
+to do - SystemT
+	Structure
+		- fix headline when going to smaller size screen
+		- begin working on media queries
+
+	Style
+		- change fonts
+		- change header colors
+		- create buttons for nav
+		- modify colors to match branding
+
+	Animations
+		- complete hover-show
+
+	SEO
+
+
+	Layout
+		- top-image at smaller screen sizes
+
+
+	Design
+		create top image design for systemt
+		create icons
+			- oil sands truck
+			- palm pilot
+			- money
+			- quotes symbol
+			- linkedin
+		design client section
+
+	Research
+		SEO - find out if css: display: hidden affects
+		CSS - properties that require vendor-prefixes
+		Autoprefixer
+
+to do - Brink SMACSS
+	Modules:
+		- namespace all
+	All Sections:
+		- namespace all
+	create version 0.0.2
+
+	color
+		notes:
+			- all colors should have variable reference in color file
+			- theme should not contain any colors that aren't variables
+			- colors in the color file should be described inline
+
+to do - npm
+	npm
+		- learn how to publish versions of brink-smacss to manage version changes

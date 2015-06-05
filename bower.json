@@ -1,0 +1,27 @@
+{
+  "name": "brink-template",
+  "version": "0.0.0",
+  "authors": [
+    "Derek <fiveflip@gmail.com>"
+  ],
+  "description": "template for brink tech",
+  "keywords": [
+    "websites"
+  ],
+  "license": "Attribution-NonCommerical-NoDerivatives 4.0 International",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.4",
+    "animate.css": "~3.3.0",
+    "wow.js": "~1.1.2",
+    "sticky": "~1.0.1",
+    "jquery.smooth-scroll": "~1.5.5"
+  }
+}
